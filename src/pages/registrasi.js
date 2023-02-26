@@ -10,7 +10,7 @@ import {
   Alert,
 } from 'react-native';
 import auth from '@react-native-firebase/auth';
-// import logo from '../assets/images/Logobook.png';
+import logo from '../assets/images/Logobook.png';
 
 const RegistrasiScreen = ({navigation}) => {
   const [email, setEmail] = useState('');
@@ -39,7 +39,7 @@ const RegistrasiScreen = ({navigation}) => {
             alt=""
             resizeMode="contain"
             style={styles.headerImg}
-            // source={logo}
+            source={logo}
           />
 
           <Text style={styles.title}>
@@ -99,10 +99,7 @@ const RegistrasiScreen = ({navigation}) => {
             </TouchableOpacity>
           </View>
 
-          <TouchableOpacity
-            onPress={() => {
-              // handle link
-            }}>
+          <TouchableOpacity onPress={() => navigation.navigate('Login')}>
             <Text style={styles.formFooter}>
               Sudah Memiliki Akun?{' '}
               <Text style={{textDecorationLine: 'underline'}}>Login</Text>

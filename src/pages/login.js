@@ -87,9 +87,7 @@ export default function LoginScreen({navigation}) {
             </TouchableOpacity>
           </View>
 
-          <TouchableOpacity
-            //Belum Jadi
-            onPress={() => navigation.navigate('registrasi')}>
+          <TouchableOpacity onPress={() => navigation.navigate('Registrasi')}>
             <Text style={styles.formFooter}>
               Belum Memiliki Akun?{' '}
               <Text style={{textDecorationLine: 'underline'}}>Registrasi</Text>
